@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://unpkg.com/react@16.3.1/umd/react.production.min.js'></script>
+    <script src='https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js'></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+</head>
+<body>
+    <div id="ke"></div>
+    <script type="text/babel">
+        function Login() {
+    return (
+        <div className="Login">
+            <h2>_Login_</h2><br/><br/>
+            <form>
+                <label for="fname">User Id:</label><br />
+                <input type="text" id="userid" name="userid" style={{width:"50%"}} required /><br />
+                <label for="lname">Password:</label><br />
+                <input type="password" id="pwd" name="pwd" style={{width:"50%"}} required /><br/> <br/>
+                <button>Login</button>
+            </form>
+        </div>
+    )
+}
+ReactDOM.render(<Login/>, document.getElementById("ke"));
+    </script>
+</body>
+</html>
